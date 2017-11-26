@@ -1,0 +1,16 @@
+<Tab>
+    <tab
+        id="@+id/tab_profil_investor"
+        icon="@drawable/ic_kontak"
+        activeColor="@color/colorPrimary"
+        titleSize="6dp"
+        title="Profile"/>
+
+    <tab
+        id="@+id/tab_timeline_investor"
+        icon="@drawable/ic_timeline"
+        activeColor="@color/colorPrimary"
+        titleSize="6dp"
+        title="Timeline"/>
+
+</Tab>

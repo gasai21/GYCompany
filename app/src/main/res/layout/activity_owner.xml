@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pangling.gycompany.OwnerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/contentowner"
+            android:layout_above="@+id/bottombarowner">
+
+        </FrameLayout>
+        <com.roughike.bottombar.BottomBar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/bottombarowner"
+            android:layout_alignParentBottom="true"
+            app:bb_tabXmlResource="@xml/bottombar"
+            android:background="#fff"
+            app:bb_inActiveTabAlpha="1.9">
+
+        </com.roughike.bottombar.BottomBar>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

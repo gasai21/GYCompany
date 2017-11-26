@@ -1,0 +1,22 @@
+<Tab>
+    <tab
+        id="@+id/tab_profil"
+        icon="@drawable/ic_kontak"
+        activeColor="@color/colorPrimary"
+        titleSize="6dp"
+        title="Profile"/>
+
+    <tab
+        id="@+id/tab_timeline"
+        icon="@drawable/ic_timeline"
+        activeColor="@color/colorPrimary"
+        titleSize="6dp"
+        title="Timeline"/>
+
+    <tab
+        id="@+id/tab_add"
+        icon="@drawable/ic_add_post"
+        activeColor="@color/colorPrimary"
+        titleSize="6dp"
+        title="ADD Post"/>
+</Tab>

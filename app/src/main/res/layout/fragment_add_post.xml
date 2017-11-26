@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pangling.gycompany.fragmentowner.AddPostFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/foto"
+            android:id="@+id/imgAddPhotoOwner"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Photo"
+            android:gravity="center"
+            android:layout_below="@id/imgAddPhotoOwner"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvAddphotoOwner"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/tvGarisOwner"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/tvAddphotoOwner"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvnamazz"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tvGarisOwner"
+            android:text="Title"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvnamazz"
+            android:hint="type here"
+            android:id="@+id/txttitleOwner"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvketeranganzz"
+            android:layout_below="@+id/txttitleOwner"
+            android:text="Keteranga"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvketeranganzz"
+            android:hint="type here"
+            android:id="@+id/txtketeranganOwner"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtketeranganOwner"
+            android:layout_centerHorizontal="true"
+            android:text="POST"
+            android:id="@+id/btnPost"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pangling.gycompany.EditPostOwnerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Form"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/judulEditOwner"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/foto"
+            android:layout_below="@+id/judulEditOwner"
+            android:id="@+id/imgAddPhotoOwner"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Photo"
+            android:gravity="center"
+            android:layout_below="@id/imgAddPhotoOwner"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvAddphotoOwner"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/tvGarisOwner"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/tvAddphotoOwner"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGarisOwner"
+            android:text="Nama Apps"
+            android:id="@+id/tvNamaPerusahaanEditOwner"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNamaPerusahaanEditOwner"
+            android:id="@+id/txtNamaAppsEditInvestor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNamaAppsEditInvestor"
+            android:text="Keterangan"
+            android:id="@+id/tvQuotesEditInvestor"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvQuotesEditInvestor"
+            android:id="@+id/txtKeteranganEditInvestor"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_below="@+id/txtKeteranganEditInvestor"
+            android:textColor="#fff"
+            android:id="@+id/btnEditPostOwner"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

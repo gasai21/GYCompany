@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.pangling.gycompany.fragmentowner.ProfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="31dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imgProfilOwner"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:id="@+id/tvNamaOwner"
+            android:textSize="28dp"
+            android:layout_below="@+id/imgProfilOwner"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNamaOwner"
+            android:text="title"
+            android:id="@+id/tvTitleOwner"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tvTitleOwner"
+            android:text="djasdkjasdkja djnsakjdkad dsaddahkjshdka dhsakjhdak jdsakhdksaj dasdkjaskj djhaskdak"
+            android:id="@+id/tvKeteranganOwner"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="#bbb"
+            android:id="@+id/tvGarisOwner"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/tvKeteranganOwner"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvGarisOwner"
+            android:id="@+id/rvOwner">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnEditProfil"
+            android:src="@drawable/ic_edit"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pangling.gycompany.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00897b"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrasi Form"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvJudulRegistrasi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNameRegistrasi"
+            android:layout_below="@+id/tvJudulRegistrasi"
+            android:text="Nama"
+            android:layout_marginTop="50dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNameRegistrasi"
+            android:textColor="#fff"
+            android:id="@+id/txtNamaRegistrasi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvUsernameRegistrasi"
+            android:layout_below="@+id/txtNamaRegistrasi"
+            android:text="Username"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUsernameRegistrasi"
+            android:textColor="#fff"
+            android:id="@+id/txtUsernameRegistrasi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPasswordRegistrasi"
+            android:layout_below="@+id/txtUsernameRegistrasi"
+            android:text="Password"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPasswordRegistrasi"
+            android:textColor="#fff"
+            android:id="@+id/txtPasswordRegistrasi"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEmailRegistrasi"
+            android:layout_below="@+id/txtPasswordRegistrasi"
+            android:text="Email"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEmailRegistrasi"
+            android:textColor="#fff"
+            android:id="@+id/txtEmailRegistrasi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPosisiRegistrasi"
+            android:layout_below="@+id/txtEmailRegistrasi"
+            android:text="Posisi"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvPosisiRegistrasi"
+            android:entries="@array/posisi"
+            android:id="@+id/cbPosisi">
+
+        </Spinner>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbPosisi"
+            android:text="Registrasi"
+            android:id="@+id/btnRegisterRegister"
+            android:textColor="#00897b"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
